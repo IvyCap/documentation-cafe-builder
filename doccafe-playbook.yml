@@ -1,0 +1,24 @@
+site:
+  title: The Documentation Cafe
+  url: https://www.documentation.cafe
+  start_page: documentation-cafe::index.adoc
+  robots: allow
+content:
+  sources: 
+  - url: https://github.com/IvyCap/documentation-cafe.git
+    branches: main
+ui: 
+  bundle:
+    url: https://gitlab.com/IvyCap/documentation-cafe-ui/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    # url: ../../documentation-cafe-ui/build/ui-bundle.zip
+    # url: ~/Downloads/ui-bundle.zip
+    snapshot: true
+
+runtime:
+  fetch: true
+  log:
+    failure_level: warn
+
+    
+
